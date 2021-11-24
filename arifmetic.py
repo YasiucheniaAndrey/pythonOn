@@ -3,20 +3,21 @@
 # то вычесть; * — умножить; / — разделить (первое на второе). В остальных случаях вернуть строку
 # "Неизвестная операция".
 
-def arithmetic(a,b,c):  # add whitespaces
+def arithmetic(a,b,c):  # todo add whitespaces
     if c == "+":
-        print(a+b)  # don't use prints here. Use `return` instead
+        print(a+b)  # todo don't use prints here. Use `return` instead
     elif c == "-":
-        print (a-b)  # add whitespaces
+        print (a-b)  # todo add whitespaces
     elif c == "*":
         print (a*b)
     elif c == "/":
         print (a/b)
     else:
-        print("Неизвестная операция")  # don't use prints here. Use `return` instead.
+        print("Неизвестная операция")  # todo don't use prints here. Use `return` instead.
 
 a = int(input("First number = "))
 b = int(input("Second number = "))
 c = input("what to do with numbers ")
 
+# todo add condition https://github.com/YasiucheniaAndrey/pythonOn/blob/main/main.py#L13
 arithmetic(a,b,c) # add whitespaces
