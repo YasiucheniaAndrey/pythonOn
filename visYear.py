@@ -7,7 +7,7 @@ def is_year_leap(year):
     else:
         print("False")
 
+# todo add condition like here https://github.com/YasiucheniaAndrey/pythonOn/blob/main/main.py#L13
 a = int(input('введите год пжлста '))
 
-# todo add condition like here https://github.com/YasiucheniaAndrey/pythonOn/blob/main/main.py#L13
 is_year_leap(a)
