@@ -13,7 +13,7 @@ def arithmetic(a,b,c):  # todo add whitespaces
     elif c == "/":
         print (a/b)
     else:
-        print("Неизвестная операция")  # todo don't use prints here. Use `return` instead.
+        print("Неизвестная операция")  # todo don't use prints here. Use `return` instead
 
 a = int(input("First number = "))
 b = int(input("Second number = "))
