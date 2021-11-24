@@ -3,20 +3,20 @@
 # то вычесть; * — умножить; / — разделить (первое на второе). В остальных случаях вернуть строку
 # "Неизвестная операция".
 
-def arithmetic(a,b,c):
+def arithmetic(a,b,c):  # add whitespaces
     if c == "+":
-        print(a+b)
+        print(a+b)  # don't use prints here. Use `return` instead
     elif c == "-":
-        print (a-b)
+        print (a-b)  # add whitespaces
     elif c == "*":
         print (a*b)
     elif c == "/":
         print (a/b)
     else:
-        print("Неизвестная операция")
+        print("Неизвестная операция")  # don't use prints here. Use `return` instead.
 
 a = int(input("First number = "))
 b = int(input("Second number = "))
 c = input("what to do with numbers ")
 
-arithmetic(a,b,c)
+arithmetic(a,b,c) # add whitespaces
