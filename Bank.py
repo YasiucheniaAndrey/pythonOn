@@ -8,6 +8,6 @@ def bank(a, years):  # todo what is a? variable names should be self-describing
     print("Через ", years,  " лет будет ", a , " денег")  # todo do not use prints inside the function. It should return some result
 
 # todo the code shouldn't run if the module is imported somewhere
-# please add a clause: `if __name__ == "__main__":`
+# please add a clause: `if __name__ == "__main__":` like here: https://github.com/YasiucheniaAndrey/pythonOn/blob/main/main.py#L13
 bank(int(input("Сколько денег ")), int(input("На сколько лет? ")))
 
