@@ -1,23 +1,23 @@
-# Написать функцию arithmetic, принимающую 3 аргумента: первые 2 - числа, третий - операция
-# , которая должна быть произведена над ними. Если третий аргумент +, сложить их; если —,
-# то вычесть; * — умножить; / — разделить (первое на второе). В остальных случаях вернуть строку
-# "Неизвестная операция".
 
-def arithmetic(a,b,c):  # todo add whitespaces
+
+def arithmetic(a, b, c):
     if c == "+":
-        print(a+b)  # todo don't use prints here. Use `return` instead
+        return (a + b)
     elif c == "-":
-        print (a-b)  # todo add whitespaces
+        return (a - b)
     elif c == "*":
-        print (a*b)
+        return (a * b)
     elif c == "/":
-        print (a/b)
+        if b == 0:
+            return "Деление на ноль"
+        return (a / b)
     else:
-        print("Неизвестная операция")  # todo don't use prints here. Use `return` instead
+        return ("Неизвестная операция")
 
-a = int(input("First number = "))
-b = int(input("Second number = "))
-c = input("what to do with numbers ")
 
-# todo add condition https://github.com/YasiucheniaAndrey/pythonOn/blob/main/main.py#L13
-arithmetic(a,b,c) # add whitespaces
+if __name__ == '__main__':
+
+    a = int(input("First number = "))
+    b = int(input("Second number = "))
+    c = input("what to do with numbers ")
+    print("Результат ", arithmetic(a ,b ,c))
