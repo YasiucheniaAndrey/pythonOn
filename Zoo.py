@@ -25,7 +25,7 @@ class Animal:
             print("Введите цвет зверя \n")
             color = input()
             self.color = color
-    name = str #Установка клички животного
+    name = str #Установка клички животногоj
     def get_name (self):
         return self.name
     def set_name (self):
