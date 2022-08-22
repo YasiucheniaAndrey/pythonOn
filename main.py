@@ -1,17 +1,20 @@
-# This is a sample Python script.
+class People:
+    def __init__(self, name):
+        self.name = name
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    def get_name(self):
+        return self.name.lower()
 
+class Man(People):
+    def __init__(self, name):
+        super().__init__(name)
+        self.sex = "m"
+    def get_sex(self):
+        return self.sex
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+class Woman(People):
+    def get_sex(self):
+        return "w"
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+man = Man("Zaza")
+print(man.get_name(), man.get_sex())
